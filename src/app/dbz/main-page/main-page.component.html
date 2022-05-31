@@ -4,13 +4,12 @@
 
 <div class="row">
   <div class="col">
-    <app-personajes [personajes]="personajes"> <!-- [personajes] se refiere a la del hijo y personajes se refiere a la de main-page.component-->
+    <app-personajes> <!-- [personajes] se refiere a la del hijo y personajes se refiere a la de main-page.component-->
     </app-personajes>
   </div>
   <div class="col">
     <app-agregar
       [nuevo]="nuevo"
-      (onNuevoPersonaje)="agregarNuevoPersonaje( $event )"
     ></app-agregar>
   </div>
 </div>
